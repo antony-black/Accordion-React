@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import 'normalize.css';
+
+
+.App {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .multiple-switcher {
+    border: 1px solid transparent;
+    background-color: lightblue;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 65px;
+    border-radius: 15px;
+  }
+
+  .rounds {
+    width: 100%;
+    max-width: 1200px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .round {
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .question {
+      background-color: lightblue;
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .open-answer {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: lightcoral;
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+}
